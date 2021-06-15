@@ -1,48 +1,51 @@
 /* Stéphane CSS */
 
-/* ==== html ==== */
+/* ==== html & body==== */
 html {
 	font-family: 'Odibee Sans',
-	cursive;
+		cursive;
 	color: #8c7ae6;
 }
 
-/* Dans la navBar */
 
-h1 {
-	font-size: 4em;
+body {
+	display: flex;
+	flex-direction: column;	
+	justify-content: space-between;
+	align-content: center;
+	height: 100vh;
 }
 
+main {
+	/* height: 100%; */
+	display: flex;
+	flex-direction: column;
+	/* justify-content: space-between; */
+	align-items: center;
+}
+
+/* Dans le main */
+
 div.title {
+	font-size: 4em;
 	border: 3px solid #8c7ae6;
 	border-radius: 25px;
 	padding: 0.5em 0.5em 0.5em 0.5em;
-	margin: 4em 0.5em 0.5em 0.5em;
+	margin: 1em 0.5em 0.5em 0.5em;
 	max-width: max-content;
 	text-align: center;
 }
 
-#main-button {
-	background-color: null;
-	width: 40%;
-	margin: 1em 30% 1em 30%;
+.counter {
+	font-size: 5em;
 }
 
-body {
-	min-height: 100vh;
-	overflow: scroll;
-}
+/*===== Dans le footer =====*/
 
 #footer {
-	position: fixed;
+	/* position: fixed; */
 	bottom: 0;
 	width: 100%;
 	padding: 3em 1em 3em 1em;
-}
-
-#background-color {
-	width: 40%;
 	text-align: center;
-	margin: 10% 30% 1em 30%;
-	font-size: 2em;
 }
